@@ -17,7 +17,7 @@ mongoose.model('Comentario',{
     Analisis:{
             type: String,
             require: true,
-            max: [100, 'El máximo es de 100 palabras']
+            max: [500, 'El máximo es de 500 carácteres']
     },
     Calificacion:{
         type:Number,

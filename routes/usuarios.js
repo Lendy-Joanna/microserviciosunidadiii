@@ -59,7 +59,7 @@ ruta.get('/', (req, res)=>{
 //lista uno
 ruta.get('/:idusuario', (req, res)=>{
 
-    let IdUsuario=req.params.idsuario;
+    let IdUsuario=req.params.idusuario;
     usua.findOne({IdUsuario}).then((usuario)=>{
         res.json(usuario);
     }).catch((error) => {
